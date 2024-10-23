@@ -1,0 +1,60 @@
+
+.main-container{
+    display: flex;
+    border: 2px solid rgb(27, 1, 1);
+    border-radius: 18px;
+    width: 1100px;
+    box-shadow: 2px 2px 2px 5px black;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.first-containeter img{
+width: 10px;
+height: 10px;
+}
+
+.second-container{
+    margin-top: 90px;
+    width: 400px;
+    padding-top: 40px;
+
+
+}
+.second-container p{
+    margin-left: 30px;
+}
+
+
+h1{
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.first-child{
+    padding-top: 30px;
+
+}
+.first-child >input{
+    margin-top: 15px;
+    width: 400px;
+    margin-left: 10px;
+}
+button{
+    margin-top: 30px;
+    background-color: blue;
+    color:white;
+    padding: 5px;
+    width: 100px;
+    margin-left: 10px;
+}
+.a{
+
+margin-left: 170px;
+}
+
+hr{
+    margin-top:30px;
+}

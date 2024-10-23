@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--dashbobard containeer--->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="profile">
+                    <img src="Assects/RR.jpeg">
+                    <span class="username">Ramya Devi T</span>
+                
+                </div>
+            </div>
+            <!---manu barq-->
+            <nav class="menu">
+                <ul>
+                    <li><a href="#"></a><img src="Assects/dashboard.png" alt="">
+                        Dashboard</a></li>
+                    <li><a href="#"><img src="Assects/mailbox.png" alt="">
+                            Mailboxes</a></li>
+                    <li><a href="#"></i><img src="Assects/cloud.png" alt=""> File
+                            Manager</a></li>
+                    <li><a href="#"><img src="Assects/callenter.png" alt="">
+                            Calendar</a></li>
+                    <li><a href="#"><img src="Assects/tick.png" alt=""> Todo</a></li>
+                    <li><a href="logout/logout.html"><img src="Assects/logout.png" alt="">
+                            Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="opt-in">
+                    <img src="Assects/arrow.png" alt="">
+                    <img src="Assects/plus-icon.png" alt="">
+                    <img src="" alt="">
+
+                </div>
+
+                <div class="user-options">
+                    <button class="btn" id="applications-btn">Applications</button>
+                    <button class="btn" id="reports-btn">Reports</button>
+                    <button class="btn" id="projects-btn">Projects</button>
+                    <div class="opt-out">
+                        <img src="Assects/RR.jpeg">
+                    </div>
+                    <div class="opt-circle">4</div>
+                </div>
+            </header>
+            <h1>Dashboard</h1>
+            <hr>
+            <!-- Statistics Section -->
+            <section class="statistics">
+                <div class="card-1">
+                    <div class="stat-icon"><img src="Assects/tick.png"></div>
+                    <div class="stat-info">
+                        <h2>Today's Sales</h2>
+                        <p id="sales">$38,211</p>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="stat-icon"><img src="Assects/support.png"></div>
+                    <div class="stat-info">
+                        <h2>Active Users</h2>
+                        <p id="active-users">23,491</p>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="stat-icon"><img src="Assects/download.png"></div>
+                    <div class="stat-info">
+                        <h2>Downloads</h2>
+                        <p id="downloads">140,390</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Tasks Section -->
+            <section class="tasks">
+                <div class="task-card">
+                    <h2>Active Tasks</h2>
+                    <ul id="active-tasks-list">
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 ">
+                                    <img src="Assects/dashboard.png">
+                                </div>
+                                <div>
+                                    <b>Dashboard UI optimizations</b>
+                                    <p>Oskar Hudson</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 ">
+                                    <img src="Assects/mailbox.png">
+                                </div>
+                                <div>
+                                    <b>Mailbox cleanup</b>
+                                    <p>Oskar Hudson</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 ">
+                                    <img src="Assects/plus-icon.png">
+                                </div>
+                                <div>
+                                    <b>Header scroll bugfix</b>
+                                    <p>Oskar Hudson</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 ">
+                                    <img src="Assects/cloud.png">
+                                </div>
+                                <div>
+                                    <b>File manager performance optimization</b>
+                                    <p>Oskar Hudson</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 ">
+                                    <img src="Assects/tick.png">
+                                </div>
+                                <div>
+                                    <div>
+                                        <b>Calendar performance optimization</b>
+                                        <p>Oskar Hudson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="task-card">
+                    <h2>Todo</h2>
+                    <ul class="todo-list">
+                        <li><input type="checkbox" class="task-checkbox"> Localization for file manager</li>
+                        <li><input type="checkbox" class="task-checkbox"> New e-commerce UX/UI design</li>
+                        <li><input type="checkbox" class="task-checkbox"> Localization for calendar</li>
+                        <li><input type="checkbox" class="task-checkbox"> Localization for todo</li>
+                        <li><input type="checkbox" class="task-checkbox"> Localization for dashboard</li>
+                    </ul>
+                </div>
+                <div class="task-card">
+                    <h2>In Progress</h2>
+                    <ul id="in-progress-list">
+                        <li></li>
+                        <div class="active-task">
+                            <div class="stat-icon1 ">
+                                <img src="Assects/dashboard.png">
+                            </div>
+                            <div class="inpro">
+                                <b>Dashboard UI optimizations</b>
+                                <span class="status">45%</span>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1">
+                                    <img src="Assects/mailbox.png">
+                                </div>
+                                <div class="inpro">
+                                    <b>Mailbox cleanup</b>
+                                    <span class="status">80%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 ">
+                                    <img src="Assects/plus-icon.png">
+                                </div>
+                                <div class="inpro">
+                                    <b>Header scroll bugfix</b>
+                                    <span class="status">48%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1">
+                                    <img src="Assects/cloud.png">
+                                </div>
+                                <div class="inpro">
+                                    <b>File manager performance optimization</b>
+                                    <span class="status">50%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="active-task">
+                                <div class="stat-icon1 ">
+                                    <img src="Assects/tick.png">
+                                </div>
+                                <div class="inpro">
+                                    <b>Calendar performance optimization</b>
+                                    <span class="status">60%</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Chart Section -->
+            <div class="chart-re">
+                <section class="chart">
+                    <h3>Earnings</h3>
+                    <canvas id="earningsChart"></canvas>
+                </section>
+                <div class="report">
+                    <h3>Report</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt facilis, culpa
+                        accusamus itaque deserunt voluptas quis neque officiis.</p>
+                    <div class="re-list">
+                        <div class="task">
+                            <div class="task-info">
+                                <div class="icon green">
+                                    <p>Dashboard UI optimisations</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <div class="task-info">
+                                    <div class="icon blue"></div>
+                                    <p>Mailbox cleanup</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <div class="task-info">
+                                    <div class="icon purple"></div>
+                                    <p>Header scroll bugfix</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <div class="task-info">
+                                    <div class="icon orange"></div>
+                                    <p>Localization for file manager</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <div class="task-info">
+                                    <div class="icon red"></div>
+                                    <p>New E-commerce UX/UI design</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Summary Section -->
+            <section class="summary">
+                <div class="summary-card">
+                    <h2>Tasks Completed</h2>
+                    <p id="tasks-completed">$3,971</p>
+                    <canvas id="tasksCompletedChart"></canvas>
+                </div>
+                <div class="summary-card">
+                    <h2>Engagement</h2>
+                    <p id="engagement">$50,761</p>
+                    <canvas id="engagementChart"></canvas>
+                </div>
+                <div class="summary-card">
+                    <h2>Balance</h2>
+                    <p id="balance">$785,665</p>
+                    <canvas id="balanceChart"></canvas>
+                </div>
+            </section>
+            <div class="containerx">
+                <!-- Post Section -->
+                <div class="post-card">
+                    <h4>Quisque congue risus sit amet pellentesque fermentum</h4>
+                    <p class="post-content">
+                        Morbi bibendum, mi et lacinia ornare, turpis justo viverra risus, at tristique tortor massa ut
+                        arcu. Suspendisse potenti. Suspendisse cursus aliquam dictum. Curabitur nec fringilla orci.
+                        Vivamus ut viverra elit.
+                    </p>
+                    
+                    <div class="post-footer">
+                        <span>Date: 9:30 PM</span>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+                <!-- Connection Request Section -->
+                <div class="connection-card">
+                    <div class="connection-header">
+                        <span class="time-ago">20 Minutes Ago</span>
+                    </div>
+                    <div class="connection-info">
+                        <img src="Assects/RR.jpeg" class="profile-pic">
+                        <div class="connection-details">
+                            <p><strong>Ramya Devi</strong></p>
+                            <p>75 mutual connections</p>
+                            <p>Senior  Developer at microsoft</p>
+                        </div>
+                    </div>
+                    <div class="connection-actions">
+                        <button class="accept-btn">✔ Accept</button>
+                        <button class="ignore-btn">✘ Ignore</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Dashborad.js"></script>
+</body>
+
+</html>
